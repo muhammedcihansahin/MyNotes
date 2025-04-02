@@ -161,14 +161,14 @@ public class Operations {
 
         if (c.next == null) {
             isCurrentLastNote = true;
-            if (new File(("C:\\Users\\" + System.getProperty("user.name") + "\\Documents\\MyNotes\\" + "Not " + noteCount + ".txt")).exists()) {
+            if (new File(("C:\\Users\\" + System.getProperty("user.name") + "\\Documents\\MyNotes\\" + "Note " + noteCount + ".txt")).exists()) {
 
             }
             noteCount = 1;
-            while (new File(("C:\\Users\\" + System.getProperty("user.name") + "\\Documents\\MyNotes\\" + "Not " + noteCount + ".txt")).exists()) {
+            while (new File(("C:\\Users\\" + System.getProperty("user.name") + "\\Documents\\MyNotes\\" + "Note " + noteCount + ".txt")).exists()) {
                 noteCount++;
             }
-            Frame.titleText.setText("Not " + noteCount);
+            Frame.titleText.setText("Note " + noteCount);
 
             c.notName = Frame.titleText.getText();
             Operations.notEkle(n);
